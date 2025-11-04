@@ -3,11 +3,13 @@ module github.com/restump/go-utils
 go 1.25.3
 
 require (
+	github.com/aws/aws-lambda-go v1.50.0
 	github.com/aws/aws-sdk-go-v2 v1.39.5
 	github.com/aws/aws-sdk-go-v2/service/ec2 v1.261.0
 	github.com/aws/aws-sdk-go-v2/service/secretsmanager v1.39.10
 	github.com/aws/aws-sdk-go-v2/service/ssm v1.66.3
 	github.com/aws/aws-sdk-go-v2/service/sts v1.39.0
+	github.com/mdobak/go-xerrors v1.0.0
 )
 
 require (
