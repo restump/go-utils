@@ -19,7 +19,7 @@ func GetEnabledRegions(
 	input := &ec2.DescribeRegionsInput{
 		Filters: []ec2types.Filter{
 			{
-				Name: goutils.ToPtr("opt-in-status"),
+				Name: utils.ToPtr("opt-in-status"),
 				Values: []string{
 					"opt-in-not-required",
 					"opted-in",
