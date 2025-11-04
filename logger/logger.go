@@ -74,8 +74,8 @@ func ReplaceAttr(_ []string, a slog.Attr) slog.Attr {
 }
 
 func New(level slog.Level) *slog.Logger {
-	opts := &slog.HandlerOptions{Level: level, ReplaceAttr: ReplaceAttr}
-	logger := slog.New(slog.NewJSONHandler(os.Stdout, opts))
+	options := &slog.HandlerOptions{Level: level, ReplaceAttr: ReplaceAttr}
+	logger := slog.New(slog.NewJSONHandler(os.Stdout, options))
 
 	// detect when in an AWS lambda runtime environment; add 'requestId' attribute
 	ctx, cancel := context.WithTimeout(context.Background(), time.Second*30)
