@@ -9,7 +9,7 @@ import (
 )
 
 func GetSecretValue(
-	c aws.Config, 
+	c aws.Config,
 	timeout time.Duration,
 	secretId, versionId, versionStage *string,
 	options ...func(*secrets.Options),

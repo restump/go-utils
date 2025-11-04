@@ -25,7 +25,6 @@ func GetEnabledRegions(
 					"opted-in",
 				},
 			},
-
 		},
 	}
 
@@ -38,5 +37,3 @@ func GetEnabledRegions(
 	}
 	return res, nil
 }
-
-

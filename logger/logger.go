@@ -1,4 +1,4 @@
-package alms
+package loggerutils
 
 import (
 	"context"
